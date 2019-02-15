@@ -1,7 +1,7 @@
 
-
 import 'package:flutter/material.dart';
 
+//Page on making toast
 class SecondApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,6 +11,7 @@ class SecondApp extends StatelessWidget {
     }
 
     void makeToast(BuildContext context) {
+
       Scaffold.of(context).showSnackBar(new SnackBar(
         content: new Text("Your toast here"),
       ));

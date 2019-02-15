@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void decreaseCounter() {
+  void navigateScreen() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SecondApp()),
@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.all(8.0),
               textColor: Colors.white,
               color: Colors.blue,
-              onPressed: decreaseCounter,
+              onPressed: navigateScreen,
               child: new Text("Enter new screen"),
             ),
             Text('You have pushed the button this many times:',),
